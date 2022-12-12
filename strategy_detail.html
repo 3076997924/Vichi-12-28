@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vichi-游记详情</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入相同样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入 字体图标  iconfont -->
+    <link rel="stylesheet"
+        href="https://at.alicdn.com/t/c/font_3788509_dtoulzgzqyo.css?spm=a313x.7781069.1998910419.53&file=font_3788509_dtoulzgzqyo.css">
+    <link rel="stylesheet" href="./css/strategy/strategy_detail.css">
+</head>
+
+<body>
+    <!-- 头部 header section  -->
+    <header class="header-section">
+        <div class="header-bar-section">
+            <div class="login">
+                <div class="login-icon">
+                    <img src="./images/icon-login.png" alt="">
+                </div>
+                <p>
+                    您好，请先 <a href="javascript:;">登陆</a> | <a href="javascript:;">注册</a>
+                </p>
+            </div>
+            <ul class="header-bar">
+                <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+            </ul>
+        </div>
+        <div class="header-bd-section">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="./journey.html"><span>旅程</span></a></li>
+                    <li><a href="./hotel.html"><span>酒店</span></a></li>
+                    <li><a href="./planeTocket.html"><span>机票</span></a></li>
+                    <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                    <li class="current"><a href="./strategy.html"><span>游记攻略</span></a></li>
+                    <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-links">
+                <div class="mobile-btns">
+                    <div class="mobile-wrap">
+                        <div class="mobile-title">
+                            我的账号
+                            <span class="iconfont icon-sort" id="closeMobile"></span>
+                        </div>
+                        <div class="login-mobile">
+                            <a href="">登陆</a>
+                        </div>
+                        <div class="register-mobile">
+                            <a href="">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-mobile">
+                    <div class="mobile-wrap">
+                        <li class="current"><a href="index.html"><span>首页</span></a></li>
+                        <li><a href="./journey.html"><span>旅程</span></a></li>
+                        <li><a href="./hotel.html"><span>酒店</span></a></li>
+                        <li><a href="./planeTocket.html"><span>机票</span></a></li>
+                        <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                        <li><a href="./strategy.html"><span>游记攻略</span></a></li>
+                        <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                    </div>
+                </ul>
+                <div class="other-links-mobile">
+                    <div class="mobile-wrap">
+                        <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-mobile-btn">
+                <span class="iconfont icon-sort" id="openMobile"></span>
+            </div>
+            <div class="compare">
+                <a href=""><img src="./images/PK.png" alt="" class="pk">
+                    <img src="./images/compare.png" alt="" class="com-img"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 分栏区域 -->
+    <section class="column-section">
+        <div class="banner">
+            <div class="column">
+                <div class="column-lf">
+                    <div class="goback">
+                        <a href="./strategy.html">
+                            <span class="iconfont icon-zuojiantou"></span>
+                            返回上一页
+                        </a>
+                    </div>
+                    <div class="column-lf-con">
+                        <div class="column-lf-con-hd">
+                            <div class="column-lf-hd-title">
+                                <h3>越南越美,14天自由行玩转越南</h3>
+                                <div class="column-lf-hd-other">
+                                    <div class="title-eye">
+                                        <span class="iconfont icon-yanjing"></span>阅读人数: <i>120450</i>
+                                    </div> |
+                                    <div class="title-time">
+                                        <span class="iconfont icon-time"></span>发布时间: <i>2020-10-08</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-lf-hd-star">
+                                <span class="iconfont icon-kongxinwujiaoxing"></span>
+                                已收藏
+                            </div>
+                        </div>
+                        <div class="column-lf-con-bd">
+                            <p>----前言</p>
+                            <p>此行越南，决定的比较匆忙，仅仅是因为有时间，又恰好在查到了比较便宜的机票，而整个越南旅程走下来，几乎每一个目的地都很喜欢，大大超出预期，同时也拍到了大量满意的照片，与其说这是一趟旅行，不如说是一次完美的采风之行。越南和任何国家一样，有着丰富的文化遗产，令人垂涎的美食，以及身穿奥黛柔情似水的西贡小姐。越南有五处地方已入选联合国教科文组织《世界遗产名录》，被评为可以与泰国相提并论成为东南亚仅次于印度尼西亚的旅游目的地。虽然越南的城市建设和消费水平还停留在我国八、九十年代的样子，但是资讯从某种意义上说比国内还发达，因为他们不限制网络。而最令我动容的，除了沿途的美景外，更是越南人的随性与热情，他们挑着担子走街串巷售卖商品就可以赚到钱，他们只要有个矮凳不论是街边还是公园，就可以不紧不慢地喝着滴漏咖啡，这样处处充满着浓浓市井气息的场景，在国内是很少见到的。我的行程与大部分旅行者一样，从北至南，途经河内、岘港、会安、芽庄、大叻、美奈、西贡，一路“越南越美”。
+                            </p>
+                            <img src="./images/strategy/columndetail1.jpg" alt="">
+                            <p>----境内交通</p>
+                            <p>越南境内长途有夜巴或航班，短途有小巴，想省钱可以全程汽车，想省时省力可以考虑部分耗时较久的路程坐飞机。汽车通常大部分中国游客会选择The Sinh Tourist，原名Sinh
+                                Cafe，大家习惯称之为“新咖啡”，优点是线路覆盖面广，官网可在线购票www.thesinhtourist.vn，旺季有必要提前买好。缺点是假冒店很多，要注意看清楚Logo和全称，官网有各城市办公室的地址，建议提前地图查清楚定位好。途中有遇到其他车况更好的巴士公司，很多欧美游客乘坐，可以看出新咖啡并不一定是最好的，只是中国乘客比较多。建议一定要选择可靠的大公司，以防发生半路甩客的情况，其他不错的公司有Hanh
+                                Cafe，Futa。境内航班有越南航空，也有捷星、比基尼等廉航，我们从河内到岘港选择的捷星，如果夜巴，新咖啡是18点发车，第二天10:30才能到顺化，顺化不大，一般游客会呆数小时，13:30再乘车前往岘港或会安，建议这一程选择航班，夜巴耗时太久，而且第二天玩顺化也会比较辛苦，只是选择了航班也就错过了顺化，还看个人取舍。
+                            </p>
+                            <img src="./images/strategy/columndetail2.jpg" alt="">
+                            <p>越南是摩托车上的国家，河内、西贡都是摩托大军所在城市，也是传言飞车党猖狂之地，在这两个城市，考虑到安全，建议步行和选择公共交通，我所停留的其他城市，除了会安都有租摩托车。在越南租摩托车非常方便，不需要驾照，也不需要押金，全程通过酒店租车，6-8美元每天，油另外加，但挺便宜。对于越南的出租车，定价偏高，而且常有宰客现象，建议选择更正规些的Mai
+                                Linh公司，即车身印有38383838电话的，并要求司机打表。如果担心绕路，最佳方式是提前用Google
+                                Maps查好路线，上车后就指给司机看。我有三次打出租的经历，都没什么问题。</p>
+                        </div>
+                        <div class="column-lf-hotels">
+                            <div class="column-lf-hotel">
+                                <a href="./hotel_detail.html">
+                                    <div class="column-hotel-hd">
+                                        <div class="hotel-title">
+                                            <h3>萨拉岘港海滩酒店(Sala Danang Beach Hotel)</h3>
+                                            <div class="column-hotel-other">
+                                                <div class="column-hotel-star">
+                                                    星级: <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                </div> | 
+                                                <div class="column-hotel-score">
+                                                    评分: <i>9.8分</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hotel-detail">
+                                            查看详情
+                                        </div>
+                                    </div>
+                                    <img src="./images/strategy/columndetail3.jpg" alt="">
+                                    <p>Lang Co Yen Binh 5N3D | 机票 + 带私人泳池的别墅 + 早餐 + 晚餐 + 机场接送</p>
+                                </a>
+                            </div>
+                            <div class="column-lf-hotel">
+                                <a href="./hotel_detail.html">
+                                    <div class="column-hotel-hd">
+                                        <div class="hotel-title">
+                                            <h3>金兰安南酒店(The Anam Cam Ranh)</h3>
+                                            <div class="column-hotel-other">
+                                                <div class="column-hotel-star">
+                                                    星级: <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                    <span class="iconfont icon-wujiaoxing"></span>
+                                                </div> | 
+                                                <div class="column-hotel-score">
+                                                    评分: <i>9.8分</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hotel-detail">
+                                            查看详情
+                                        </div>
+                                    </div>
+                                    <img src="./images/strategy/columndetail3.jpg" alt="">
+                                    <p>Lang Co Yen Binh 5N3D | 机票 + 带私人泳池的别墅 + 晚餐 + 机场接送</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-rt">
+                    <div class="column-search">
+                        <h3>-旅游达人带你玩</h3>
+                        <div class="column-input">
+                            <input type="text" placeholder="请输入目的地关键字进行搜索">
+                            <span>|</span>
+                            <button>搜索</button>
+                        </div>
+                    </div>
+                    <div class="column-rt-items">
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt1.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>来越南旅行能买什么？</h4>
+                                    <p>认识越南货币越南盾;越南必买的几个常见款...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt2.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>越南机场实用指南</h4>
+                                    <p>个机场是越南著名的旅游城市机场介绍，接下来...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt3.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>芽庄潜水深度攻略</h4>
+                                    <p>世界水肺潜水之父与芽庄;芽庄潜水的优势;朝圣之旅...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-rt-tags">
+                        <h3>热门标签</h3>
+                        <div class="column-rt-tagItem">
+                            <a href="./strategy_second.html" class="length-32">旅游河内</a>
+                            <a href="./strategy_second.html" class="length-32">前往芽庄</a>
+                            <a href="./strategy_second.html" class="length-32">旅游体验</a>
+                            <a href="./strategy_second.html" class="length-32">旅游小贴士</a>
+                            <a href="./strategy_second.html" class="length-32">线路</a>
+                            <a href="./strategy_second.html" class="length-32">签证</a>
+                            <a href="./strategy_second.html" class="length-32">胡志明市</a>
+                            <a href="./strategy_second.html" class="length-32">柬埔寨</a>
+                            <a href="./strategy_second.html" class="length-32">当地美食</a>
+                            <a href="./strategy_second.html" class="length-66">越南自由行攻略</a>
+                            <a href="./strategy_second.html" class="length-32">河内大教堂</a>
+                            <a href="./strategy_second.html" class="length-49">芽庄市逛吃逛喝</a>
+                            <a href="./strategy_second.html" class="length-49">大叻玛丽修道院</a>
+                            <a href="./strategy_second.html" class="length-66">安娜曼德拉别墅度假酒店</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer class="footer-section">
+        <div class="footer-hd">
+            <div class="banner">
+                <ul class="ft-nav">
+                    <li><a href="./journey.html">旅程</a></li>
+                    <li><a href="javascript:;">酒店</a></li>
+                    <li><a href="javascript:;">机票</a></li>
+                    <li><a href="javascript:;">定制路线</a></li>
+                    <li><a href="javascript:;">游记攻略</a></li>
+                    <li><a href="javascript:;">会员中心</a></li>
+                </ul>
+                <div class="ft-top">
+                    返回顶部
+                    <img src="./images/icon_back.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bd">
+            <div class="banner">
+                <div class="footer-msg">
+                    <div class="footer-msg-left">
+                        <div class="footer-msg-notice">
+                            金莲国旅: <br>
+                            对于中国游客而言，以及对于越来越多的世界各地的游客而言， 携程是其可值得信赖的旅行平台，用户可以通过携程的平台进行任何类型的旅行预订，包括从目的地内活动、周末短假及短途旅行，到跨境..
+                        </div>
+                        <div class="footer-msg-contact">
+                            联系我们: <br>
+                            <p>服务热线：020-226231</p>
+                            <p>合作热线：020-115423</p>
+                            <p>联系邮箱：21542512@qq.com</p>
+                            <p>公司地址：广东省广州市天河区龙洞森林公园环山路</p>
+                        </div>
+                    </div>
+                    <div class="footer-msg-right">
+                        <div class="erweicode">
+                            <div class="wechat">
+                                <p>—— 微信客服 ——</p>
+                                <img src="./images/erweicode1.png" alt="">
+                            </div>
+                            <div class="official">
+                                <p>—— 公众号 ——</p>
+                                <img src="./images/erweicode2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mobile">咨询电话: <span>020-123456</span> 或 <span>020-326531</span></div>
+                    </div>
+                </div>
+                <ul class="footer-platform">
+                    <li>腾讯开放平台</li>
+                    <li>全球速卖通</li>
+                    <li>腾讯微云</li>
+                    <li>腾讯会议</li>
+                    <li>阿里云计算</li>
+                    <li>腾讯优图</li>
+                    <li>大麦网</li>
+                    <li>腾讯文档</li>
+                    <li>阿里巴巴集团</li>
+                    <li>腾讯企点</li>
+                    <li>网商银行</li>
+                    <li>阿里妈妈</li>
+                    <li>阿里通信</li>
+                    <li>阿里影业</li>
+                    <li>阿里健康</li>
+                    <li>阿里安全</li>
+                </ul>
+                <div class="footer-record">
+                    浙ICP备2012000356号-3
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入jquery js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入公共 js -->
+    <script src="./js/common.js"></script>
+    <script>
+        $(function () {
+            $('.column-input button').click(function () {
+                window.location.href = 'strategy_search.html'
+            })
+        })
+    </script>
+</body>
+
+</html>

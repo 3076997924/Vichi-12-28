@@ -1,0 +1,109 @@
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+.pay-tips-section{
+    width: 100%;
+    padding: 1rem 0;
+    background: #f5f9fe;
+    border-bottom: .25rem solid var(--mainColor);
+    box-shadow: 3px 5px 6px 1px rgb(17 75 156 / 23%);
+}
+.pay-tips{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.25rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #e93f36;
+}
+
+.pay-success-section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.pay-success{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay-success-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background: #f5f9fe;
+}
+.pay-success-icon span{
+    color: var(--mainColor);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.pay-success-title{
+    margin-top: 1rem;
+    color: var(--maindeepColor);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.pay-success-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.pay-success-msg div{
+    text-align: center;
+    width: 20rem;
+    padding: 0 2rem;
+}
+.pay-success-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.pay-success-btns div{
+    width: 16.25rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    margin: 0 2rem;
+}
+.goback{
+    border: .25rem solid var(--mainColor);
+    color: var(--mainColor);
+}
+.check{
+    background: var(--mainColor);
+    color: #fff;
+}
+.pay-success-contact{
+    width: 16rem !important;
+    margin-right: 0;
+}
+.pay-success-msg a{
+    color: var(--mainColor);
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width:1200px){
+    .wrap{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+    .pay-success-msg div{
+        width: 16rem;
+    }
+    .pay-success-msg a{
+        color: var(--mainColor);
+        font-weight: bolder;
+        width: 4rem;
+    }
+}

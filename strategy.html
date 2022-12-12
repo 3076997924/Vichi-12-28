@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vichi-游记攻略</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入相同样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/strategy/strategy.css">
+    <!-- 引入 字体图标  iconfont -->
+    <link rel="stylesheet"
+        href="https://at.alicdn.com/t/c/font_3788509_dtoulzgzqyo.css?spm=a313x.7781069.1998910419.53&file=font_3788509_dtoulzgzqyo.css">
+</head>
+
+<body>
+    <!-- 头部 header section  -->
+    <header class="header-section">
+        <div class="header-bar-section">
+            <div class="login">
+                <div class="login-icon">
+                    <img src="./images/icon-login.png" alt="">
+                </div>
+                <p>
+                    您好，请先 <a href="javascript:;">登陆</a> | <a href="javascript:;">注册</a>
+                </p>
+            </div>
+            <ul class="header-bar">
+                <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+            </ul>
+        </div>
+        <div class="header-bd-section">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="./journey.html"><span>旅程</span></a></li>
+                    <li><a href="./hotel.html"><span>酒店</span></a></li>
+                    <li><a href="./planeTocket.html"><span>机票</span></a></li>
+                    <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                    <li class="current"><a href="./strategy.html"><span>游记攻略</span></a></li>
+                    <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-links">
+                <div class="mobile-btns">
+                    <div class="mobile-wrap">
+                        <div class="mobile-title">
+                            我的账号
+                            <span class="iconfont icon-sort" id="closeMobile"></span>
+                        </div>
+                        <div class="login-mobile">
+                            <a href="">登陆</a>
+                        </div>
+                        <div class="register-mobile">
+                            <a href="">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-mobile">
+                    <div class="mobile-wrap">
+                        <li class="current"><a href="index.html"><span>首页</span></a></li>
+                        <li><a href="./journey.html"><span>旅程</span></a></li>
+                        <li><a href="./hotel.html"><span>酒店</span></a></li>
+                        <li><a href="./planeTocket.html"><span>机票</span></a></li>
+                        <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                        <li><a href="./strategy.html"><span>游记攻略</span></a></li>
+                        <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                    </div>
+                </ul>
+                <div class="other-links-mobile">
+                    <div class="mobile-wrap">
+                        <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-mobile-btn">
+                <span class="iconfont icon-sort" id="openMobile"></span>
+            </div>
+            <div class="compare">
+                <a href=""><img src="./images/PK.png" alt="" class="pk">
+                    <img src="./images/compare.png" alt="" class="com-img"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 二级导航栏区域 -->
+    <section class="sec_nav_section">
+        <div class="sec-bg"></div>
+        <div class="banner">
+            <ul class="sec_nav">
+                <li class="current"><a href="javascript:;">主页</a></li>
+                <li><a href="javascript:;">促销</a></li>
+                <li><a href="javascript:;">丰富多彩</a></li>
+                <li>
+                    <a href="javascript:;">目的地</a>
+                    <ol>
+                        <li>
+                            <a href="./strategy_second.html">游记攻略</a>>
+                            <div class="thirdslink">
+                                <div class="thirdlink"><a href="./strategy_third.html">芽庄</a></div>
+                                <div class="thirdlink"><a href="./strategy_third.html">胡志明市</a></div>
+                                <div class="thirdlink"><a href="./strategy_third.html">美奈</a></div>
+                                <div class="thirdlink"><a href="./strategy_third.html">庆和省</a></div>
+                                <div class="thirdlink"><a href="./strategy_third.html">下龙湾</a></div>
+                                <div class="thirdlink"><a href="./strategy_third.html">大叻</a></div>
+                            </div>
+                        </li>
+                        <li><a href="./strategy_second.html">东南亚</a>></li>
+                        <li><a href="./strategy_second.html">顶级路线</a>></li>
+                    </ol>
+                </li>
+                <li><a href="javascript:;">美食</a></li>
+                <li><a href="javascript:;">游玩</a></li>
+                <li><a href="javascript:;">预定之旅</a></li>
+                <li><a href="javascript:;">预定酒店</a></li>
+                <li><a href="javascript:;">预定机票</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 主体区域 -->
+    <section class="brief-section">
+        <div class="banner">
+            <div class="brief">
+                <div class="brief-lf">
+                    <div class="brief-item">
+                        <a href="./strategy_detail.html">
+                            <img src="./images/strategy/brief-lf.jpg">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="brief-rt">
+                    <div class="brief-item">
+                        <a href="./strategy_detail.html">
+                            <img src="./images/strategy/brief-rt1.jpg">
+                            <div class="mask"></div>
+                            <div class="brief-item-msg">
+                                <h5>越南越美,却是一路向北</h5>
+                                <p>“这是一个具备魔力的国度。它的炎热，它的苍翠田..</p>
+                                <div class="brief-item-eye">
+                                    <span class="iconfont icon-yanjing"></span>
+                                    阅读人数: <i>35640</i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="brief-item">
+                        <a href="./strategy_detail.html">
+                            <img src="./images/strategy/brief-rt2.jpg">
+                            <div class="mask"></div>
+                            <div class="brief-item-msg">
+                                <h5>乏味的北,精彩的南</h5>
+                                <p>河内-会安-芽庄-大叻-美奈-西贡（胡志明市）行程。..</p>
+                                <div class="brief-item-eye">
+                                    <span class="iconfont icon-yanjing"></span>
+                                    阅读人数: <i>4010</i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="brief-item">
+                        <a href="./strategy_detail.html">
+                            <img src="./images/strategy/brief-rt3.jpg">
+                            <div class="mask"></div>
+                            <div class="brief-item-msg">
+                                <h5>14天自由行玩转越南</h5>
+                                <p>此行越南，决定的比较匆忙，仅仅是因为有时间，又恰..</p>
+                                <div class="brief-item-eye">
+                                    <span class="iconfont icon-yanjing"></span>
+                                    阅读人数: <i>11100</i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="brief-item">
+                        <a href="./strategy_detail.html">
+                            <img src="./images/strategy/brief-rt4.jpg">
+                            <div class="mask"></div>
+                            <div class="brief-item-msg">
+                                <h5>"私奔"在越南</h5>
+                                <p>去越南过年，本是夏天和闺蜜欢乐游完柬埔寨后的约定，哪..</p>
+                                <div class="brief-item-eye">
+                                    <span class="iconfont icon-yanjing"></span>
+                                    阅读人数: <i>35640</i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分栏区域 -->
+    <section class="column-section">
+        <div class="banner">
+            <div class="column">
+                <div class="column-lf">
+                    <div class="column-lf-item">
+                        <div class="column-lf-theme">
+                            <div class="column-lf-item1">
+                                <h3 class="column-lf-title1">
+                                    目的地
+                                </h3>
+                                <a href="./strategy_detail.html">
+                                    <div class="column-lf-img1">
+                                        <img src="./images/strategy/columnlf1.jpg" alt="">
+                                    </div>
+                                    <h4 class="column-lf-item1-title">
+                                        岘港丨打卡“东方夏威夷”的最全宝藏玩法
+                                    </h4>
+                                    <div class="column-lf-item1-msg">
+                                        果你对东南亚的历史和宗教感兴趣，一定要去越南的...亚太地区最佳旅行目的地之一。无论你是想体验地道...
+                                    </div>
+                                    <div class="column-lf-item1-other">
+                                        <div class="column-lf-item1-eye">
+                                            <span class="iconfont icon-yanjing"></span>
+                                            浏览人数:
+                                            <i>120450</i>
+                                        </div> |
+                                        <div class="column-lf-item1-time">
+                                            <span class="iconfont icon-time"></span>
+                                            发布时间:
+                                            <i>2020-10-08</i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-item2">
+                                <a href="./strategy_detail.html">
+                                    <div class="column-lf-img2">
+                                        <img src="./images/strategy/columnlf2.jpg" alt="">
+                                    </div>
+                                    <div class="column-lf-item2-msg">
+                                        <div class="column-lf-item2-title">
+                                            芽庄游玩指南：人气体验&精彩景点
+                                        </div>
+                                        <p>芽庄四岛游;TOP4 特色表演水上木偶戏;TOP5 越南最...所以提前预定住宿，是明智的...</p>
+                                        <div class="column-lf-item2-eye">
+                                            <span class="iconfont icon-yanjing"></span>
+                                            阅读人数:
+                                            <i>139033</i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column-lf-articles">
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>芽庄珍珠岛怎么玩？完整路线推荐</h4>
+                                    <p>珍珠岛的自我介绍;二、安利珍珠岛，要有理有据;珍珠岛有...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>岘港这样玩，更自在</h4>
+                                    <p>恍惚重返丽江的四方街。号称“越南丽江”“越南的江南古镇”的...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>芽庄珍珠岛怎么玩？完整路线推荐</h4>
+                                    <p>珍珠岛的自我介绍;二、安利珍珠岛，要有理有据;珍珠岛有...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>大叻+美奈，高性价比玩转越南！</h4>
+                                    <p>免违规。一定要带好头盔，请注意安全！美奈，越南东南部的一个...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-lf-item">
+                        <div class="column-lf-theme">
+                            <div class="column-lf-item1">
+                                <h3 class="column-lf-title1">
+                                    美食
+                                </h3>
+                                <div class="column-lf-img1">
+                                    <img src="./images/strategy/columnlf3.jpg" alt="">
+                                </div>
+                                <h4 class="column-lf-item1-title">
+                                    一言不合就旅游——越南
+                                </h4>
+                                <div class="column-lf-item1-msg">
+                                    用了12天走了一遭 越南 ，从南到北，城市之间的交通：飞机，火车，大巴都已亲自体验。...
+                                </div>
+                                <div class="column-lf-item1-other">
+                                    <div class="column-lf-item1-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        浏览人数:
+                                        <i>120450</i>
+                                    </div> |
+                                    <div class="column-lf-item1-time">
+                                        <span class="iconfont icon-time"></span>
+                                        发布时间:
+                                        <i>2020-10-08</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-lf-item2">
+                                <div class="column-lf-img2">
+                                    <img src="./images/strategy/columnlf4.jpg" alt="">
+                                </div>
+                                <div class="column-lf-item2-msg">
+                                    <div class="column-lf-item2-title">
+                                        越南芽庄之旅 吐槽版
+                                    </div>
+                                    <p>前年的公司annual traveling 很随意的一篇游记 跟团游果然不适合我...</p>
+                                    <div class="column-lf-item2-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>139033</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-lf-articles">
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>大叻+美奈，高性价比玩转越南！</h4>
+                                    <p>免违规。一定要带好头盔，请注意安全！美奈，越南东南部的一个...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>岘港这样玩，更自在</h4>
+                                    <p>恍惚重返丽江的四方街。号称“越南丽江”“越南的江南古镇”的...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>大叻+美奈，高性价比玩转越南！</h4>
+                                    <p>免违规。一定要带好头盔，请注意安全！美奈，越南东南部的一个...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column-lf-article">
+                                <a href="./strategy_detail.html">
+                                    <h4>越南本土美食河内篇，清单大汇总</h4>
+                                    <p>越南粉（pho）;Pho Gia Truyen;Pho 1...且招牌上有中文的哦。推荐3...</p>
+                                    <div class="column-lf-article-eye">
+                                        <span class="iconfont icon-yanjing"></span>
+                                        阅读人数:
+                                        <i>243484</i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-rt">
+                    <div class="column-search">
+                        <h3>-旅游达人带你玩</h3>
+                        <div class="column-input">
+                            <input type="text" placeholder="请输入目的地关键字进行搜索">
+                            <span>|</span>
+                            <button>搜索</button>
+                        </div>
+                    </div>
+                    <div class="column-rt-items">
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt1.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>来越南旅行能买什么？</h4>
+                                    <p>认识越南货币越南盾;越南必买的几个常见款...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt2.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>越南机场实用指南</h4>
+                                    <p>个机场是越南著名的旅游城市机场介绍，接下来...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-rt-item">
+                            <a href="./strategy_detail.html">
+                                <div class="column-rt-item-img">
+                                    <img src="./images/strategy/columnrt3.jpg" alt="">
+                                </div>
+                                <div class="column-rt-item-info">
+                                    <h4>芽庄潜水深度攻略</h4>
+                                    <p>世界水肺潜水之父与芽庄;芽庄潜水的优势;朝圣之旅...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-rt-tags">
+                        <h3>热门标签</h3>
+                        <div class="column-rt-tagItem">
+                            <a href="./strategy_second.html" class="length-32">旅游河内</a>
+                            <a href="./strategy_second.html" class="length-32">前往芽庄</a>
+                            <a href="./strategy_second.html" class="length-32">旅游体验</a>
+                            <a href="./strategy_second.html" class="length-32">旅游小贴士</a>
+                            <a href="./strategy_second.html" class="length-32">线路</a>
+                            <a href="./strategy_second.html" class="length-32">签证</a>
+                            <a href="./strategy_second.html" class="length-32">胡志明市</a>
+                            <a href="./strategy_second.html" class="length-32">柬埔寨</a>
+                            <a href="./strategy_second.html" class="length-32">当地美食</a>
+                            <a href="./strategy_second.html" class="length-66">越南自由行攻略</a>
+                            <a href="./strategy_second.html" class="length-32">河内大教堂</a>
+                            <a href="./strategy_second.html" class="length-49">芽庄市逛吃逛喝</a>
+                            <a href="./strategy_second.html" class="length-49">大叻玛丽修道院</a>
+                            <a href="./strategy_second.html" class="length-66">安娜曼德拉别墅度假酒店</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer class="footer-section">
+        <div class="footer-hd">
+            <div class="banner">
+                <ul class="ft-nav">
+                    <li><a href="./journey.html">旅程</a></li>
+                    <li><a href="javascript:;">酒店</a></li>
+                    <li><a href="javascript:;">机票</a></li>
+                    <li><a href="javascript:;">定制路线</a></li>
+                    <li><a href="javascript:;">游记攻略</a></li>
+                    <li><a href="javascript:;">会员中心</a></li>
+                </ul>
+                <div class="ft-top">
+                    返回顶部
+                    <img src="./images/icon_back.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bd">
+            <div class="banner">
+                <div class="footer-msg">
+                    <div class="footer-msg-left">
+                        <div class="footer-msg-notice">
+                            金莲国旅: <br>
+                            对于中国游客而言，以及对于越来越多的世界各地的游客而言， 携程是其可值得信赖的旅行平台，用户可以通过携程的平台进行任何类型的旅行预订，包括从目的地内活动、周末短假及短途旅行，到跨境..
+                        </div>
+                        <div class="footer-msg-contact">
+                            联系我们: <br>
+                            <p>服务热线：020-226231</p>
+                            <p>合作热线：020-115423</p>
+                            <p>联系邮箱：21542512@qq.com</p>
+                            <p>公司地址：广东省广州市天河区龙洞森林公园环山路</p>
+                        </div>
+                    </div>
+                    <div class="footer-msg-right">
+                        <div class="erweicode">
+                            <div class="wechat">
+                                <p>—— 微信客服 ——</p>
+                                <img src="./images/erweicode1.png" alt="">
+                            </div>
+                            <div class="official">
+                                <p>—— 公众号 ——</p>
+                                <img src="./images/erweicode2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mobile">咨询电话: <span>020-123456</span> 或 <span>020-326531</span></div>
+                    </div>
+                </div>
+                <ul class="footer-platform">
+                    <li>腾讯开放平台</li>
+                    <li>全球速卖通</li>
+                    <li>腾讯微云</li>
+                    <li>腾讯会议</li>
+                    <li>阿里云计算</li>
+                    <li>腾讯优图</li>
+                    <li>大麦网</li>
+                    <li>腾讯文档</li>
+                    <li>阿里巴巴集团</li>
+                    <li>腾讯企点</li>
+                    <li>网商银行</li>
+                    <li>阿里妈妈</li>
+                    <li>阿里通信</li>
+                    <li>阿里影业</li>
+                    <li>阿里健康</li>
+                    <li>阿里安全</li>
+                </ul>
+                <div class="footer-record">
+                    浙ICP备2012000356号-3
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入jquery js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入公共 js -->
+    <script src="./js/common.js"></script>
+    <!-- 引入strategy.js -->
+    <script src="./js/strategy/strategy.js"></script>
+    <script>
+        $(function () {
+            $('.column-input button').click(function () {
+                window.location.href = 'strategy_search.html'
+            })
+        })
+    </script>
+</body>
+
+</html>

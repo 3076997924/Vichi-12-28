@@ -1,0 +1,328 @@
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+.banner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.column-section{
+    padding: 2rem;
+    border-top: 2rem solid #f5f9fe;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-lf{
+    width: 68%;
+}
+.column-rt{
+    width: 30%;
+}
+
+.goback a{
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.column-lf-con{
+    margin-top: 2.5rem;
+}
+.column-lf-con-hd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.column-lf-hd-title h3{
+    font-size: 3rem;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+}
+.column-lf-hd-other{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: #666;
+    font-size: 1.3rem;
+}
+.column-lf-hd-other span{
+    margin-right: 0.4rem;
+}
+.title-eye{
+    margin-right: 1rem;
+}
+.title-time{
+    margin-left: 1rem;
+}
+.column-lf-hd-star{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 0.4rem;
+    background-color: #f5f9fe;
+    color: var(--mainColor);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.column-lf-hd-star span{
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.column-lf-con-bd{
+    margin-top: 2rem;
+}
+.column-lf-con-bd p{
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    color: var(--maindeepColor);
+    font-weight: 400;
+}
+.column-lf-con-bd img{
+    margin: 0.8rem 0;
+    width: 100%;
+}
+
+.column-lf-hotels{
+    margin-top: 2rem;
+}
+.column-lf-hotel{
+    border: 1px solid #efeeed;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.column-hotel-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotel-title h3{
+    position: relative;
+    display: inline-block;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding-left: 1.5rem;
+}
+.hotel-title h3::after {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    content: "";
+    width: 0;
+    height: .22rem;
+    background-color: #114b9c;
+    transition: all .5s;
+  }
+.column-lf-hotel:hover .hotel-title h3::after{
+    width: 100%;
+}
+.column-hotel-other{
+    display: flex;
+    align-items: center;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.column-hotel-star{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+.column-hotel-star span{
+    color: #e93f36;
+    margin: 0 0.1rem;
+}
+.column-hotel-score{
+    margin-left: 1rem;
+}
+.column-hotel-score i{
+    color: #e93f36;
+    font-weight: bolder;
+}
+.hotel-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.75rem;
+    height: 5rem;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.column-lf-hotel img{
+    width: 100%;
+    margin: 1rem 0;
+}
+.column-lf-hotel p{
+    color: var(--maindeepColor);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+
+.column-search{
+    width: 100%;
+    height: 16.25rem;
+    background: url(../../images/strategy/columnsearch.jpeg) no-repeat center center;
+    background-size: cover;
+    padding: 2.4rem 1rem;
+    border-radius: 0.4rem;
+}
+.column-search h3{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    font-style: italic;
+    text-align: right;
+    padding-right: 2.4rem;
+    margin-top: 1rem;
+}
+.column-input{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    margin-top: 2.4rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.column-input input{
+    width: 100%;
+    height: 100%;
+    padding-left: 1.4rem;
+}
+.column-input button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    height: 100%;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+.column-input span{
+    position: absolute;
+    right: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.column-rt-items{
+    padding: 1.2rem;
+    border: 1px solid #efeeed;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+.column-rt-item{
+    border-bottom: 1px solid #efeeed;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.column-rt-item a{
+    display: flex;
+}
+.column-rt-item:last-child{
+    border-bottom: 0;
+}
+.column-rt-item-info{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.column-rt-item-info h4{
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--maindeepColor);
+}
+.column-rt-item h4::after{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    content: "";
+    width: 0;
+    height: .22rem;
+    background-color: var(--maindeepColor);
+    transition: all .5s;
+}
+.column-rt-item:hover h4::after{
+    width: 100%;
+}
+.column-rt-item-info p{
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.column-rt-tags{
+    width: 100%;
+    border: 1px solid #efeeed;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.column-rt-tags h3{
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: var(--maindeepColor);
+    font-style: italic;
+}
+.column-rt-tagItem{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.column-rt-tagItem a{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    border: 1px solid #efeeed;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.column-rt-tagItem a.length-32{
+    width: 32%;
+}
+.column-rt-tagItem a.length-66{
+    width: 66%;
+}
+.column-rt-tagItem a.length-49{
+    width: 49%;
+}
+
+
+@media screen and (max-width:1200px){
+    .banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px){
+    .column{
+        flex-wrap: wrap;
+    }
+    .column-lf{
+        width: 100%;
+    }
+    .column-rt{
+        width: 100%;
+    }
+}

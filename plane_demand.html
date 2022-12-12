@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vichi-机票需求</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入相同样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入机票需求样式 -->
+    <link rel="stylesheet" href="./css/planeTocket/plane_demand.css">
+    <link rel="stylesheet" href="./css/layui.css">
+    <!-- 引入 字体图标  iconfont -->
+    <link rel="stylesheet"
+        href="https://at.alicdn.com/t/c/font_3788509_dtoulzgzqyo.css?spm=a313x.7781069.1998910419.53&file=font_3788509_dtoulzgzqyo.css">
+</head>
+
+<body>
+    <!-- 头部 header section  -->
+    <header class="header-section">
+        <div class="header-bar-section">
+            <div class="login">
+                <div class="login-icon">
+                    <img src="./images/icon-login.png" alt="">
+                </div>
+                <p>
+                    您好，请先 <a href="javascript:;">登陆</a> | <a href="javascript:;">注册</a>
+                </p>
+            </div>
+            <ul class="header-bar">
+                <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+            </ul>
+        </div>
+        <div class="header-bd-section">
+            <div class="logo">
+                <h1>
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="./journey.html"><span>旅程</span></a></li>
+                    <li><a href="./hotel.html"><span>酒店</span></a></li>
+                    <li class="current"><a href="./planeTocket.html"><span>机票</span></a></li>
+                    <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                    <li><a href="./strategy.html"><span>游记攻略</span></a></li>
+                    <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-links">
+                <div class="mobile-btns">
+                    <div class="mobile-wrap">
+                        <div class="mobile-title">
+                            我的账号
+                            <span class="iconfont icon-sort" id="closeMobile"></span>
+                        </div>
+                        <div class="login-mobile">
+                            <a href="">登陆</a>
+                        </div>
+                        <div class="register-mobile">
+                            <a href="">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-mobile">
+                    <div class="mobile-wrap">
+                        <li class="current"><a href="index.html"><span>首页</span></a></li>
+                        <li><a href="./journey.html"><span>旅程</span></a></li>
+                        <li><a href="./hotel.html"><span>酒店</span></a></li>
+                        <li><a href="./planeTocket.html"><span>机票</span></a></li>
+                        <li><a href="./custom_route.html"><span>定制路线</span></a></li>
+                        <li><a href="./strategy.html"><span>游记攻略</span></a></li>
+                        <li><a href="./memberCenter.html"><span>会员中心</span></a></li>
+                    </div>
+                </ul>
+                <div class="other-links-mobile">
+                    <div class="mobile-wrap">
+                        <li><a href="javascript:;"><img src="./images/icon-star.png">收藏</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-order.png">我的订单</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-xinshou.png">新手上路</a></li>
+                        <li><a href="javascript:;"><img src="./images/icon-contact.png">联系我们:020-204500</a></li>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-mobile-btn">
+                <span class="iconfont icon-sort" id="openMobile"></span>
+            </div>
+            <div class="compare">
+                <a href=""><img src="./images/PK.png" alt="" class="pk">
+                    <img src="./images/compare.png" alt="" class="com-img"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 预定机票 -->
+    <section class="resPlane-section">
+        <div class="banner">
+            <div class="resPlane">
+                <div class="resPlane-title res-title">
+                    预定机票:
+                </div>
+                <div class="resPlane-con">
+                    <div class="resPlane-item">
+                        <img src="./images/planepocket/reserveicon1.png" alt="">
+                        提交预定
+                    </div>
+                    <div class="resPlane-item">
+                        <img src="./images/planepocket/reserveicon2.png" alt="">
+                        专人联系
+                    </div>
+                    <div class="resPlane-item">
+                        <img src="./images/planepocket/reserveicon3.png" alt="">
+                        确定出票
+                    </div>
+                    <div class="resPlane-item">
+                        <img src="./images/planepocket/reserveicon4.png" alt="">
+                        开启旅程
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 预订信息 -->
+    <section class="planeRes-section">
+        <div class="banner">
+            <div class="planeRes">
+                <div class="planeRes-title res-title">
+                    预订信息:
+                </div>
+                <div class="planeRes-con">
+                    <div class="planeRes-con-hd">
+                        <label>旅程<span>*</span></label>
+                        <div class="planeRes-radio">
+                            <div class="dancheng">
+                                <input type="radio" name="lvcheng" class="iconfont" checked>单程
+                            </div>
+                            <div class="wangfan">
+                                <input type="radio" name="lvcheng" class="iconfont">往返
+                            </div>
+                        </div>
+                    </div>
+                    <div class="planeRes-con-bd">
+                        <div class="leave">
+                            <label>出发地<span>*</span></label>
+                            <input type="text" placeholder="请输入出发地点">
+                        </div>
+                        <div class="location">
+                            <label>目的地<span>*</span></label>
+                            <input type="text" placeholder="请输入到达地点">
+                        </div>
+                        <div class="leaveDate">
+                            <label>出发日期<span>*</span></label>
+                            <input type="text" placeholder="年/月/日">
+                        </div>
+                        <div class="passNum">
+                            <label for="person-num">乘机人数<span>*</span></label>
+                            <div class="personNum">
+                                <button id="personDec">-</button>
+                                <span id="personNum">1</span>
+                                <button id="personAdd">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系人信息 -->
+    <section class="contacts-section">
+        <div class="banner">
+            <div class="contacts">
+                <div class="contacts-title res-title">
+                    联系人信息:
+                </div>
+                <div class="contacts-con">
+                    <div class="contacts-name">
+                        <label>联系人姓名<span>*</span></label>
+                        <input type="text" placeholder="请输入联系人姓名">
+                    </div>
+                    <div class="contacts-phone">
+                        <label>联系方式<span>*</span></label>
+                        <input type="text" placeholder="请输入联系人手机号码">
+                    </div>
+                    <div class="contacts-email">
+                        <label>电子邮箱<span>*</span></label>
+                        <input type="text" placeholder="请输入邮箱地址">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 乘客信息 -->
+    <section class="passMsg-section">
+        <div class="banner">
+            <div class="passMsg">
+                <div class="passMsg-title res-title">
+                    乘客信息:
+                </div>
+                <div class="passMsg-con">
+                    <div class="passMsg-item">
+                        <div class="passMsg-item-hd">
+                            <div class="pass-type">
+                                <label>乘客类型<span>*</span></label>
+                                <ul class="pass-type-list">
+                                    <li><input type="radio" class="iconfont" value="成人" name="pass-type-list1"
+                                            checked="true">成人</li>
+                                    <li><input type="radio" class="iconfont" value="儿童" name="pass-type-list1">儿童</li>
+                                    <li><input type="radio" class="iconfont" value="婴儿" name="pass-type-list1">婴儿</li>
+                                </ul>
+                            </div>
+                            <div class="pass-paper">
+                                <label>证件类型<span>*</span></label>
+                                <ul class="paper-type-list">
+                                    <li><input type="checkbox" class="iconfont" value="护照" name="paper-type-list">护照
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="passMsg-item-bd">
+                            <div class="passMsg-name">
+                                <label>乘客姓名<span>*</span></label>
+                                <input type="text" placeholder="请输入乘客姓名">
+                            </div>
+                            <div class="passMsg-phone">
+                                <label>证件号码<span>*</span></label>
+                                <input type="text" placeholder="请输入乘客证件护照号码">
+                            </div>
+                            <div class="passMsg-way">
+                                <label>联系方式<span>*</span></label>
+                                <input type="text" placeholder="请输入乘客手机号码">
+                            </div>
+                            <div class="passMsg-valid">
+                                <label>证件有效期<span>*</span></label>
+                                <div class="passMsg-input">
+                                    <input id="validate" type="text" placeholder="年/月/日">
+                                    <button>设置为长期有效</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="passMsg-item-ft">
+                            <div class="passMsg-birth">
+                                <label>乘客姓名<span>*</span></label>
+                                <input type="text" placeholder="请输入乘客出生日期">
+                            </div>
+                        </div>
+                        <div class="passMsg-number">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 保险 -->
+    <section class="insurance-section">
+        <div class="banner">
+            <div class="insurance">
+                <div class="insurance-title res-title">
+                    保险:
+                </div>
+                <div class="insurance-con">
+                    <label>购买保险<span>*</span></label>
+                    <div class="insurance-require">
+                        <div class="need">
+                            <input type="checkbox" class="iconfont"> 需要
+                        </div>
+                        <div class="noneed">
+                            <input type="checkbox" class="iconfont"> 不需要
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 备注说明 -->
+    <section class="remarks-section">
+        <div class="banner">
+            <div class="remarks">
+                <div class="remarks-title res-title">
+                    备注说明:
+                </div>
+                <div class="remarks-con">
+                    <textarea cols="30" rows="10" placeholder="选填"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 温馨提示 -->
+    <section class="tips-section">
+        <div class="banner">
+            <div class="tips">
+                <div class="tips-title res-title">
+                    温馨提示:
+                </div>
+                <div class="tips-con">
+                    <p>疫情期间,各地疫情防控措施及要求不同，为保障您的正常出行,务必请您在提交之后了解当地疫情政策。</p>
+                </div>
+                <div class="reseve-add">
+                    提交申请
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer class="footer-section">
+        <div class="footer-hd">
+            <div class="banner">
+                <ul class="ft-nav">
+                    <li><a href="./journey.html">旅程</a></li>
+                    <li><a href="./hotel.html">酒店</a></li>
+                    <li><a href="javascript:;">机票</a></li>
+                    <li><a href="javascript:;">定制路线</a></li>
+                    <li><a href="javascript:;">游记攻略</a></li>
+                    <li><a href="javascript:;">会员中心</a></li>
+                </ul>
+                <div class="ft-top">
+                    返回顶部
+                    <img src="./images/icon_back.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bd">
+            <div class="banner">
+                <div class="footer-msg">
+                    <div class="footer-msg-left">
+                        <div class="footer-msg-notice">
+                            金莲国旅: <br>
+                            对于中国游客而言，以及对于越来越多的世界各地的游客而言， 携程是其可值得信赖的旅行平台，用户可以通过携程的平台进行任何类型的旅行预订，包括从目的地内活动、周末短假及短途旅行，到跨境..
+                        </div>
+                        <div class="footer-msg-contact">
+                            联系我们: <br>
+                            <p>服务热线：020-226231</p>
+                            <p>合作热线：020-115423</p>
+                            <p>联系邮箱：21542512@qq.com</p>
+                            <p>公司地址：广东省广州市天河区龙洞森林公园环山路</p>
+                        </div>
+                    </div>
+                    <div class="footer-msg-right">
+                        <div class="erweicode">
+                            <div class="wechat">
+                                <p>—— 微信客服 ——</p>
+                                <img src="./images/erweicode1.png" alt="">
+                            </div>
+                            <div class="official">
+                                <p>—— 公众号 ——</p>
+                                <img src="./images/erweicode2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mobile">咨询电话: <span>020-123456</span> 或 <span>020-326531</span></div>
+                    </div>
+                </div>
+                <ul class="footer-platform">
+                    <li>腾讯开放平台</li>
+                    <li>全球速卖通</li>
+                    <li>腾讯微云</li>
+                    <li>腾讯会议</li>
+                    <li>阿里云计算</li>
+                    <li>腾讯优图</li>
+                    <li>大麦网</li>
+                    <li>腾讯文档</li>
+                    <li>阿里巴巴集团</li>
+                    <li>腾讯企点</li>
+                    <li>网商银行</li>
+                    <li>阿里妈妈</li>
+                    <li>阿里通信</li>
+                    <li>阿里影业</li>
+                    <li>阿里健康</li>
+                    <li>阿里安全</li>
+                </ul>
+                <div class="footer-record">
+                    浙ICP备2012000356号-3
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- 引入jquery js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入公共 js -->
+    <script src="./js/common.js"></script>
+    <script src="./js/laydate.js"></script>
+    <script>
+        laydate.render({
+            elem: '#validate'
+        });
+        $(function () {
+            $('.reseve-add').click(function () {
+                window.location.href = 'planeSuccess.html'
+            })
+        })
+        var personNum = $('#personNum').text();
+        $('#personDec').click(function () {
+            if (personNum > 1) {
+                personNum--;
+            } else {
+                personNum = 1
+            }
+            $('#personNum').text(personNum)
+        })
+        $('#personAdd').click(function () {
+            personNum++;
+            $('#personNum').text(personNum)
+        })
+    </script>
+</body>
+
+</html>
