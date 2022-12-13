@@ -23,6 +23,7 @@
     flex-wrap: wrap;
 }
 .Des-title{
+    font-weight: bolder;
     font-size: 2.3rem;
     color: var(--maindeepColor);
 }
@@ -213,6 +214,7 @@
     height: 100%;
     line-height: 4.75rem;
     text-align: center;
+    color: #fff;
 }
 .trangle {
     position: absolute;
@@ -268,12 +270,14 @@
 }
 .detail_content_title h4{
     font-size: 2rem;
+    font-weight: bolder;
 }
 .detail_content_list_title h5{
     position: relative;
     z-index: 1;
     display: inline-block;
     font-size: 1.5rem;
+    font-weight: bolder;
     margin-top: 2rem;
     color: var(--mainColor);
 }
@@ -445,6 +449,7 @@
 .reserve-hotel-item-title h4{
     font-size: 1.5rem;
     padding-left: 1rem;
+    font-weight: bolder;
     color: var(--maindeepColor);
 }
 .hotel-tag{
@@ -452,6 +457,7 @@
     align-items: center;
     margin: 0 1rem;
     margin-top: 0.5rem;
+    font-size: 1.3rem;
 }
 .hotel-tag span{
     display: block;
@@ -473,6 +479,7 @@
 .hotel-compare-hd li{
     width: 16.5rem;
     text-align: center;
+    font-size: 1.3rem;
 }
 .hotel-compare-item{
     display: flex;
@@ -489,6 +496,7 @@
     width: 16.5rem;
     text-align: center;
     font-weight: bolder;
+    font-size: 1.3rem;
     border-right: 1px solid #ccc;
 }
 .hotel-compare-item ul li:last-child{
@@ -496,7 +504,7 @@
 }
 .compare-reserve{
     margin-left: 1rem;
-    width: 7.5rem;
+    width: 8.5rem;
     height: 4.6rem;
     font-weight: 500;
     border-radius: .5rem;
@@ -511,7 +519,7 @@
 .compare-btn{
     cursor: pointer;
     margin-left: 1rem;
-    width: 7.5rem;
+    width: 8.5rem;
     height: 4.6rem;
     font-size: 1.3rem;
     font-weight: 500;
@@ -657,9 +665,13 @@
     font-size: 1.3rem;
     font-weight: 500;
 }
+.comment-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 .comment-imgs img{
-    margin-top: 1rem;
-    margin-right: 1rem;
+    width: 30%;
 }
 
 /* 预定须知区域 */
@@ -1093,7 +1105,7 @@ color: #fff;
         width: 100%;
     }
     .hotel-compare-hd{
-        width: 75%;
+        width: 70%;
     }
     .hotel-compare-hd li{
         width: 25%;
@@ -1189,4 +1201,108 @@ color: #fff;
     .time-chart{
         padding: 2rem 0;
     }
+}
+
+
+
+.cityImgsSwiper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    width: 90rem;
+    height: 60rem;
+    padding: 5rem;
+    background-color: #fff;
+}
+.citySwiperClose{
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.cityBt{
+    overflow: hidden;
+}
+.city-swipers{
+    width: 100%;
+    height: 38rem;
+    margin-top: 1rem;
+}
+.city-swipers img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.citySwiperClose span{
+    font-size: 3rem;
+    color: #666;
+}
+.city-swiper-items{
+    margin-top: 1.5rem;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+/* .city-swiper-items::-webkit-scrollbar{
+    display: none;
+} */
+.city-swiper-item{
+    position: relative;
+    display: inline-block;
+    width: 15.7rem;
+    height: 12rem;
+}
+.city-swiper-item img {
+    width: 100%;
+    height: 100%;
+}
+.city-swiper-item.current .mask{
+    display: none;
+}
+.city-swiper-item .item-line{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .5rem;
+    background-color: #114b9c;
+}
+.city-swiper-item.current .item-line{
+    display: block;
+}
+.lf,.lr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top: 40%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #114b9c;
+}
+.lf,.lr span{
+    color: #fff;
+    font-size: 2rem;
+}
+.lf{
+    left: 1.25rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+.lr{
+    right: 1.25rem;
+}
+
+.mobileSwiper{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 95%;
 }

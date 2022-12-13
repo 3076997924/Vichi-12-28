@@ -177,7 +177,7 @@ $(function () {
         $(dom).attr('data-index',index)
     })
     $('.detailDes-imgs .Des-img').click(function(){
-        if($(this).data('index') > 0){
+        if($(this).data('index') > 0 && $(this).data('index') < $('.detailDes-imgs .Des-img').length){
             $('.detailDes-lf-img').show();
             $('.detailDes-video').hide();
             $('.detailDes-lf-img img').prop('src',$(this).children('img').prop('src'))
@@ -186,4 +186,97 @@ $(function () {
             $('.detailDes-video').show();
         }
     })
+
+
+        // 轮播图事件
+        $('.detailDes-imgs .Des-img:last').click(function () {
+            if (document.body.clientWidth >=850) {
+                $('.cityImgsSwiper').show()
+            }else{
+                $('.mobileSwiper').show()
+            }
+            $('.detail-mask').show()
+        })
+        // 轮播图关闭
+        $('.citySwiperClose').click(function () {
+            $('.cityImgsSwiper').hide()
+            $('.detail-mask').hide()
+        })
+    
+        $('.city-swipers img').each(function (index, dom) {
+            $(dom).attr('data-index', index)
+        })
+        var currentIndex = $('.city-swipers .current').data('index')
+        var imgsLength = $('.city-swipers img').length - 1;
+        $('.lf').click(function () {
+            if (currentIndex > 0) {
+                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
+                $('.city-swiper-item').eq(currentIndex).removeClass('current');
+                $('.city-swipers img').eq(--currentIndex).fadeIn().addClass('current')
+                $('.city-swiper-item').eq(currentIndex).addClass('current');
+            } else {
+                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
+                $('.city-swiper-item').eq(currentIndex).removeClass('current');
+                currentIndex = imgsLength;
+                $('.city-swipers img').eq(currentIndex).fadeIn().addClass('current');
+                $('.city-swiper-item').eq(currentIndex).addClass('current');
+            }
+            let moveX = currentIndex * $('.city-swiper-item').innerWidth()
+                if(currentIndex >= 4){
+                    $('.city-swiper-items').animate({
+                        scrollLeft:moveX
+                    })
+                }else{
+                    $('.city-swiper-items').animate({
+                        scrollLeft:-moveX
+                    })
+                }
+        })
+        $('.lr').click(function () {
+            if (currentIndex < imgsLength) {
+                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
+                $('.city-swiper-item').eq(currentIndex).removeClass('current');
+                $('.city-swipers img').eq(++currentIndex).fadeIn().addClass('current');
+                $('.city-swiper-item').eq(currentIndex).addClass('current');
+            } else {
+                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
+                $('.city-swiper-item').eq(currentIndex).removeClass('current');
+                currentIndex = 0;
+                $('.city-swipers img').eq(currentIndex).fadeIn().addClass('current');
+                $('.city-swiper-item').eq(currentIndex).addClass('current');
+            }
+            let moveX = currentIndex * $('.city-swiper-item').innerWidth()
+                if(currentIndex >= 4){
+                    $('.city-swiper-items').animate({
+                        scrollLeft:moveX
+                    })
+                }else{
+                    $('.city-swiper-items').animate({
+                        scrollLeft:-moveX
+                    })
+                }
+        })
+    
+        //列表点击图 
+        $('.city-swiper-item').each(function (index, dom) {
+            $(dom).attr('data-index', index)
+            $(dom).click(function () {
+                var index = $(this).data('index')
+                $('.city-swipers img').eq(currentIndex).removeClass('current').hide()
+                $('.city-swiper-item').eq(currentIndex).removeClass('current')
+                $('.city-swipers img').eq(index).removeClass('current').fadeIn()
+                $('.city-swiper-item').eq(index).addClass('current')
+                currentIndex = index
+                let moveX = currentIndex * $('.city-swiper-item').innerWidth()
+                if(currentIndex >= 4){
+                    $('.city-swiper-items').animate({
+                        scrollLeft:moveX
+                    })
+                }else{
+                    $('.city-swiper-items').animate({
+                        scrollLeft:-moveX
+                    })
+                }
+            })
+        })
 })

@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="./css/common.css">
     <!-- 引入酒店详样式 -->
     <link rel="stylesheet" href="./css/hotel/hotel_detail.css">
+    <link rel="stylesheet" href="./css/layui.css">
     <!-- 引入字体图标 -->
     <link rel="stylesheet"
         href="https://at.alicdn.com/t/c/font_3788509_dtoulzgzqyo.css?spm=a313x.7781069.1998910419.53&file=font_3788509_dtoulzgzqyo.css">
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <style>
         .video-js .vjs-big-play-button {
             font-size: 2.5em;
@@ -37,6 +39,82 @@
         /* 中间的播放箭头 */
         .vjs-big-play-button .vjs-icon-placeholder {
             font-size: 1.63em;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        a {
+            color: #fff;
         }
     </style>
 </head>
@@ -216,7 +294,8 @@
                     </div>
                 </div>
                 <div class="detailDes-read">
-                    <p><i>酒店说明</i> ：萨拉岘港海滩酒店面朝着名的My Khe海滩，距离汉江和岘港市中心仅有2公里。 酒店提供162间享有大海和市中心景致的客房，2间餐着名的My Khe海滩，距离港海滩酒店面朝着名的My K
+                    <p><i>酒店说明</i> ：萨拉岘港海滩酒店面朝着名的My Khe海滩，距离汉江和岘港市中心仅有2公里。 酒店提供162间享有大海和市中心景致的客房，2间餐着名的My
+                        Khe海滩，距离港海滩酒店面朝着名的My K
                     </p>
                     <div class="read-btn">
                         <a href="./hotel_intro.html">阅读详情</a>
@@ -1120,8 +1199,6 @@
         </div>
     </div>
 
-    <div class="detail-mask" style="display: none;"></div>
-
     <!-- 组合需求预定 -->
     <div class="com-reserve" style="display: none;">
         <h3>组合需求预定</h3>
@@ -1129,7 +1206,7 @@
             <div class="com-reserve-item1 com-reserve-item">
                 <div class="com-reserve-birth">
                     <p>出发日</p>
-                    <input type="text" class="com-input" placeholder="年/月/日">
+                    <input type="text" class="com-input" id="intime" placeholder="年/月/日">
                 </div>
                 <div class="com-reserve-number">
                     <p>数量</p>
@@ -1149,7 +1226,8 @@
                     </div>
                 </div>
             </div>
-            <div class="com-reserve-item com-reserve-item2"><p>出发地</p>
+            <div class="com-reserve-item com-reserve-item2">
+                <p>出发地</p>
                 <div class="com-reserve-birloca">
                     <div class="birloca-item">胡志明市</div>
                     <div class="birloca-item current">河内</div>
@@ -1270,6 +1348,111 @@
     </footer>
 
 
+    <!-- Pc城市图片轮播图 -->
+    <div class="cityImgsSwiper" style="display: none;">
+        <div class="city-swipers">
+            <img src="./images/hotel/city1.jpg" class="swiperimg current" style="display: block;">
+            <img src="./images/hotel/city2.jpg" class="swiperimg">
+            <img src="./images/hotel/city3.jpg" class="swiperimg">
+            <img src="./images/hotel/city4.jpg" class="swiperimg">
+            <img src="./images/hotel/city5.jpg" class="swiperimg">
+            <img src="./images/hotel/cityswiper1.jpg" class="swiperimg">
+            <img src="./images/hotel/cityswiper2.jpg" class="swiperimg">
+        </div>
+        <div class="lf">
+            <span class="iconfont icon-left"></span>
+        </div>
+        <div class="lr">
+            <span class="iconfont icon-right"></span>
+        </div>
+        <div class="cityBt">
+            <div class="city-swiper-items">
+                <div class="city-swiper-item current">
+                    <img src="./images/hotel/city1.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/city2.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/city3.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/city4.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/city5.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/cityswiper1.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+                <div class="city-swiper-item">
+                    <img src="./images/hotel/cityswiper2.jpg" alt="">
+                    <div class="mask"></div>
+                    <div class="item-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="citySwiperClose">
+            <span class="iconfont icon-guanbi"></span>
+        </div>
+    </div>
+
+    <div class="mobileSwiper" style="display: none;">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/hotel1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel5.jpg" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/hotel1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/hotel5.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-mask" style="display: none;"></div>
 
     <!-- 引入 jquery js -->
     <script src="./js/jquery.min.js"></script>
@@ -1278,6 +1461,29 @@
     <!-- 引入酒店详情 -->
     <script src="./js/hotel/hotel_detail.js"></script>
     <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="./js/laydate.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        laydate.render({
+            elem: '#intime'
+        });
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
 </body>
 
 </html>
