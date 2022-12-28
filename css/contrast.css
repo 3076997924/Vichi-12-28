@@ -1,0 +1,114 @@
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+.banner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.contrast-section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top: 0.8rem solid #f5f9fe;
+}
+
+.contrast-hd{
+    display: flex;
+    justify-content: space-between;
+}
+.contrast-hd > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.contrast-title{
+    width: 90%;
+    height: 90%;
+}
+.contrast-title img{
+    width: 100%;
+}
+.contrast-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.contrast-img img{
+    width: 90%;
+    height: 90%;
+}
+.contrast_add{
+    cursor: pointer;
+    width: 84%;
+    height: 84%;
+    border-radius: 1rem;
+    background-color: #f5f9fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contrast_add span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #d1dff2;
+}
+.contrast-delete{
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #e93f36;
+    font-weight: bolder;
+}
+.contrast-text1{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+}
+.contrast-con{
+    width: 100%;
+    margin-top: 4rem;
+}
+.contrast-con table{
+    width: 100%;
+}
+.contrast-con tbody{
+    width: 100%;
+}
+.contrast-con tr{
+    width: 100%;
+}
+.contrast-con td{
+    width: 25%;
+    text-align: center;
+    padding: 1.4rem 0;
+    border: 1px solid #efeeed;
+    border-collapse: collapse;
+    font-weight: bolder;
+    color: var(--maindeepColor);
+}
+.contrast-con tr td:nth-child(1){
+    font-weight: 400;
+}
+
+@media screen and (max-width:1200px){
+    .banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:660px){
+    .contrast-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

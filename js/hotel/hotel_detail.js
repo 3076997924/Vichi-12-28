@@ -111,172 +111,177 @@ $(function () {
         $('.time-chart').hide()
         $('.detail-mask').hide()
     })
-    $('.time-chart-sure').click(function(){
+    $('.time-chart-sure').click(function () {
         $('.time-chart').hide()
         $('.com-reserve').show()
     })
-    $('.com-res-back').click(function(){
+    $('.com-res-back').click(function () {
         $('.com-reserve').hide()
         $('.detail-mask').hide()
     })
-    $('.com-res-submit').click(function(){
+    $('.com-res-submit').click(function () {
         $('.com-reserve').hide()
         $('.detail-mask').hide()
-        window.location.href='hotel_reserve_success.html'
+        window.location.href = 'hotel_reserve_success.html'
     })
 
-    $('.com-reserve-birloca div').click(function(){
+    $('.com-reserve-birloca div').click(function () {
         $(this).addClass('current').siblings().removeClass('current')
     })
 
     let adultNum = $('#adult-num').text()
     let childNum = $('#child-num').text()
-    $('.adult-dec').click(function(){
-        if(adultNum == 1){
+    $('.adult-dec').click(function () {
+        if (adultNum == 1) {
             adultNum = 1;
-        }else{
+        } else {
             adultNum--;
         }
         $('#adult-num').html(adultNum)
     })
-    $('.adult-add').click(function(){
+    $('.adult-add').click(function () {
         adultNum++;
         $('#adult-num').html(adultNum)
     })
-    $('.child-dec').click(function(){
-        if(childNum == 1){
+    $('.child-dec').click(function () {
+        if (childNum == 1) {
             childNum = 1;
-        }else{
+        } else {
             childNum--;
         }
         $('#child-num').html(childNum)
     })
-    $('.child-add').click(function(){
+    $('.child-add').click(function () {
         childNum++;
         $('#child-num').html(childNum)
     })
 
-    $('.detail-content-reserve').click(function(){
+    $('.detail-content-reserve').click(function () {
         $('.detail-mask').show()
         $('.com-reserve').show()
     })
 
     // 加入对比
-    $('.compare-btn').each(function(index,dom){
-        $(dom).click(function(){
+    $('.compare-btn').each(function (index, dom) {
+        $(dom).click(function () {
             $('.detail-mask').show()
             $('.compation').show()
         })
     })
-    $('.compation-btn').click(function(){
+    $('.compation-btn').click(function () {
         $('.detail-mask').hide()
-            $('.compation').hide()
+        $('.compation').hide()
     })
 
-    $('.detailDes-imgs .Des-img').each(function(index,dom){
-        $(dom).attr('data-index',index)
+    $('.detailDes-imgs .Des-img').each(function (index, dom) {
+        $(dom).attr('data-index', index)
     })
-    $('.detailDes-imgs .Des-img').click(function(){
-        if($(this).data('index') > 0 && $(this).data('index') < $('.detailDes-imgs .Des-img').length){
+    $('.detailDes-imgs .Des-img').click(function () {
+        if ($(this).data('index') > 0 && $(this).data('index') < $('.detailDes-imgs .Des-img').length) {
             $('.detailDes-lf-img').show();
             $('.detailDes-video').hide();
-            $('.detailDes-lf-img img').prop('src',$(this).children('img').prop('src'))
-        }else{
+            $('.detailDes-lf-img img').prop('src', $(this).children('img').prop('src'))
+        } else {
             $('.detailDes-lf-img').hide();
             $('.detailDes-video').show();
         }
     })
 
 
-        // 轮播图事件
-        $('.detailDes-imgs .Des-img:last').click(function () {
-            if (document.body.clientWidth >=850) {
-                $('.cityImgsSwiper').show()
-            }else{
-                $('.mobileSwiper').show()
-            }
-            $('.detail-mask').show()
-        })
-        // 轮播图关闭
-        $('.citySwiperClose').click(function () {
-            $('.cityImgsSwiper').hide()
-            $('.detail-mask').hide()
-        })
-    
-        $('.city-swipers img').each(function (index, dom) {
-            $(dom).attr('data-index', index)
-        })
-        var currentIndex = $('.city-swipers .current').data('index')
-        var imgsLength = $('.city-swipers img').length - 1;
-        $('.lf').click(function () {
-            if (currentIndex > 0) {
-                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
-                $('.city-swiper-item').eq(currentIndex).removeClass('current');
-                $('.city-swipers img').eq(--currentIndex).fadeIn().addClass('current')
-                $('.city-swiper-item').eq(currentIndex).addClass('current');
-            } else {
-                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
-                $('.city-swiper-item').eq(currentIndex).removeClass('current');
-                currentIndex = imgsLength;
-                $('.city-swipers img').eq(currentIndex).fadeIn().addClass('current');
-                $('.city-swiper-item').eq(currentIndex).addClass('current');
-            }
-            let moveX = currentIndex * $('.city-swiper-item').innerWidth()
-                if(currentIndex >= 4){
-                    $('.city-swiper-items').animate({
-                        scrollLeft:moveX
-                    })
-                }else{
-                    $('.city-swiper-items').animate({
-                        scrollLeft:-moveX
-                    })
-                }
-        })
-        $('.lr').click(function () {
-            if (currentIndex < imgsLength) {
-                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
-                $('.city-swiper-item').eq(currentIndex).removeClass('current');
-                $('.city-swipers img').eq(++currentIndex).fadeIn().addClass('current');
-                $('.city-swiper-item').eq(currentIndex).addClass('current');
-            } else {
-                $('.city-swipers img').eq(currentIndex).hide().removeClass('current');
-                $('.city-swiper-item').eq(currentIndex).removeClass('current');
-                currentIndex = 0;
-                $('.city-swipers img').eq(currentIndex).fadeIn().addClass('current');
-                $('.city-swiper-item').eq(currentIndex).addClass('current');
-            }
-            let moveX = currentIndex * $('.city-swiper-item').innerWidth()
-                if(currentIndex >= 4){
-                    $('.city-swiper-items').animate({
-                        scrollLeft:moveX
-                    })
-                }else{
-                    $('.city-swiper-items').animate({
-                        scrollLeft:-moveX
-                    })
-                }
-        })
-    
-        //列表点击图 
-        $('.city-swiper-item').each(function (index, dom) {
-            $(dom).attr('data-index', index)
-            $(dom).click(function () {
-                var index = $(this).data('index')
-                $('.city-swipers img').eq(currentIndex).removeClass('current').hide()
-                $('.city-swiper-item').eq(currentIndex).removeClass('current')
-                $('.city-swipers img').eq(index).removeClass('current').fadeIn()
-                $('.city-swiper-item').eq(index).addClass('current')
-                currentIndex = index
-                let moveX = currentIndex * $('.city-swiper-item').innerWidth()
-                if(currentIndex >= 4){
-                    $('.city-swiper-items').animate({
-                        scrollLeft:moveX
-                    })
-                }else{
-                    $('.city-swiper-items').animate({
-                        scrollLeft:-moveX
-                    })
-                }
-            })
-        })
+
+
+    var newImgs = []
+    // 轮播图事件
+    $('.detailDes-imgs .Des-img:last').click(function () {
+        newImgs = []
+        for (var i = 0; i < $('.detailDes-imgs .Des-img').length; i++) {
+            newImgs.push($('.Des-img img').eq(i).prop('src'))
+        }
+        // 渲染pc端图片
+        for (var i = 0; i < newImgs.length; i++) {
+            $('#swiperPc1').append(`<div class="swiper-slide"><img src=${newImgs[i]}></div>`)
+            $('#swiperPc2').append(`<div class="swiper-slide"><img src=${newImgs[i]}></div>`)
+        }
+
+        // 渲染移动端图片
+        for (var i = 0; i < newImgs.length; i++) {
+            $('#swiperMobile1').append(`<div class="swiper-slide"><img src=${newImgs[i]}></div>`)
+            $('#swiperMobile2').append(`<div class="swiper-slide"><img src=${newImgs[i]}></div>`)
+        }
+
+        var swiper = new Swiper(".mySwiper3", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper4", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+        if (document.body.clientWidth >= 991) {
+            $('.cityImgsSwiper').show()
+        } else {
+            $('.mobileSwiper').show()
+        }
+        $('.detail-mask').show()
+    })
+
+    var commentImgs = [];
+    $('.comment-imgs img').on('click', function () {
+        commentImgs = []
+        for (var i = 0; i < $(this).parent().children('img').length; i++) {
+            commentImgs.push($(this).parent().children('img').eq(i).prop('src'))
+        }
+
+        // 渲染pc端图片
+        for (var i = 0; i < commentImgs.length; i++) {
+            $('#swiperPc1').append(`<div class="swiper-slide"><img src=${commentImgs[i]}></div>`)
+            $('#swiperPc2').append(`<div class="swiper-slide"><img src=${commentImgs[i]}></div>`)
+        }
+
+        // 渲染移动端图片
+        for (var i = 0; i < commentImgs.length; i++) {
+            $('#swiperMobile1').append(`<div class="swiper-slide"><img src=${commentImgs[i]}></div>`)
+            $('#swiperMobile2').append(`<div class="swiper-slide"><img src=${commentImgs[i]}></div>`)
+        }
+        var swiper3 = new Swiper(".mySwiper3", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper4 = new Swiper(".mySwiper4", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper3,
+            },
+        });
+        if (document.body.clientWidth >= 991) {
+            $('.cityImgsSwiper').show()
+        } else {
+            $('.mobileSwiper').show()
+        }
+        $('.detail-mask').show()
+    })
+    // 轮播图关闭
+    $('.citySwiperClose').click(function () {
+        $('#swiperPc1').empty()
+        $('#swiperPc2').empty()
+        $('#swiperMobile1').empty()
+        $('#swiperMobile2').empty()
+        $('.cityImgsSwiper').hide()
+        $('.detail-mask').hide()
+    })
 })

@@ -1,0 +1,6 @@
+$(function(){
+    $('#sureLogin').click(function(e){
+        e.preventDefault();
+        window.location.href = 'login.html'
+    })
+}) 

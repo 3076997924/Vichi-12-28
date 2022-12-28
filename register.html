@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vichi-注册</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入首页样式 -->
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3788509_h8mbkhx0ul.css?spm=a313x.7781069.1998910419.53&file=font_3788509_h8mbkhx0ul.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="register">
+            <div class="register-title">
+                注册
+            </div>
+            <p>已有账号? <span id="login">立即登陆</span></p>
+            <form class="register-form">
+                <div class="register-phone">
+                    <img src="./images/login/phone.png">
+                    <i></i>
+                    <input type="text" placeholder="请输入手机号">
+                </div>
+                <div class="register-phone-code">
+                    <img src="./images/login/code.png" alt="">
+                    <i></i>
+                    <input type="text" placeholder="请输入手机号">
+                    <button>获取验证码</button>
+                </div>
+                <div class="register-password">
+                    <img src="./images/login/password.png" alt="">
+                    <i></i>
+                    <input type="password" placeholder="请输入6位数密码、正则:字母 + 数字">
+                </div>
+                <div class="register-againPassword">
+                    <img src="./images/login/password.png" alt="">
+                    <i></i>
+                    <input type="password" placeholder="再次输入密码">
+                </div>
+                <div class="private">
+                    <img src="./images/login/WechatIMG1249.png" alt="">
+                    <i></i>
+                    <input type="password" placeholder="请输入邀请码">
+                </div>
+                <div class="register-agreement">
+                    <input type="checkbox">
+                    <p><i>*</i> 注册代表您同意网站 <span>《用户协议》</span>及 <span>《隐私政策》</span></p>
+                </div>
+                <button id="sureReg" class="sureReg">确定注册</button>
+                <div class="backhome">返回首页</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 版权 -->
+    <div class="copyright">
+        浙ICP备2012000356号-3 | 金莲国旅
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

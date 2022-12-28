@@ -1,0 +1,300 @@
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+.banner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.unpay-section{
+    padding: 4rem 0;
+}
+.unpay-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: .0625rem solid #efeeed;
+}
+.unpay-hd-lf h2{
+    font-size: 2.5rem;
+}
+.unpay-hd-lf p{
+    margin-top: 1rem;
+    color: #666;
+    font-size: 1.4rem;
+}
+.unpay-hd-btns{
+    display: flex;
+}
+.unpay-hd-cancel{
+    cursor: pointer;
+    text-align: center;
+    width: 10rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border: .2rem solid var(--mainColor);
+    color: var(--mainColor);
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.unpay-hd-pay{
+    width: 10rem;
+    height: 4.5rem;
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.unpay-hd-pay a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 4.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.unpay-bd{
+    padding: 1.5rem 0;
+}
+.unpay-title{
+    font-size: 1.5rem;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+}
+.unpay-bd-info{
+    position: relative;
+    display: flex;
+}
+.unpay-bd-msg{
+    margin-left: 1.5rem;
+    padding-top: 0.5rem;
+}
+.unpay-bd-msg h3{
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.unpay-location{
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 1.3rem;
+}
+.unpay-other{
+    display: flex;
+    color: var(--maindeepColor);
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.unpay-other div{
+    padding: 0 0.5rem;
+}
+.unpay-time{
+    color: var(--maindeepColor);
+}
+.unpay-money{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.unpay-money span{
+    color: #e93f36;
+}
+.unpay-bd-contact{
+    padding: 1.5rem 0;
+}
+.unpay-contact-con{
+    display: flex;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+.unpay-contact-con div{
+    margin-right: 2rem;
+    color: var(--maindeepColor);
+}
+.unpay-contact-con div span{
+    color: #666;
+    margin-left: 0.5rem;
+}
+.unpay-bd-travel,.unpay-bd-remark,.unpay-bd-order{
+    padding: 1.5rem 0;
+}
+
+.unpay-travel-con{
+    margin-top: 1rem;
+}
+.unpay-travel-con table{
+    width: 100%;
+}
+.unpay-travel-con table tr{
+    width: 100%;
+}
+.unpay-travel-con thead tr{
+    background-color: #f5f9fe;
+}
+.unpay-travel-con th{
+    padding: 1rem;
+    width: 50%;
+    border: .0625rem solid #efeeed;
+    border-collapse: collapse;
+}
+.unpay-travel-con td{
+    padding: 1rem 0;
+    text-align: center;
+    border: .0625rem solid #efeeed;
+    border-collapse: collapse;
+}
+
+.unpay-remark-con{
+    color: var(--maindeepColor);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-top: 0.5rem;
+}
+.unpay-remark-con span{
+    margin-left: 0.5rem;
+    color: #666;
+}
+.first-line,.second-line,.third-line{
+    display: flex;
+    margin: 0.4rem 0;
+    color: var(--maindeepColor);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.first-line div{
+    width: 20rem;
+}
+.first-line div span{
+    color: #e93f36;
+    margin-left: 0.4rem;
+}
+.second-line div{
+    width: 20rem;
+}
+.second-line div span{
+    color: #666;
+    margin-left: 0.4rem;
+}
+.third-line div{
+    width: 20rem;
+    font-weight: bolder;
+    color: var(--maindeepColor);
+    font-size: 1.3rem;
+}
+.third-line div span{
+    color: #666;
+    margin-left: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+.cancel_order-tip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40rem;
+    height: 22rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.cancel-tip-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background: #f5f9fe;
+}
+.cancel-tip-icon span{
+    color: var(--mainColor);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.cancel-tip-con{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: var(--maindeepColor);
+    font-style: italic;
+    font-weight: bolder;
+}
+.cancel-tip-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cancel-tip-btns div{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 4rem;
+    margin: 0 1rem;
+}
+.cancel-tip-back{
+    border: .25rem solid var(--mainColor);
+    color: var(--mainColor);
+}
+.cancel-tip-sure{
+    background: var(--mainColor);
+    color: #fff;
+}
+.order-mask{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .banner{
+        width: 100%;
+    }
+}
+@media screen and (max-width:660px){
+    .unpay-section{
+        padding: 4rem 1rem;
+    }
+    .unpay-other{
+        flex-wrap: wrap;
+    }
+    .unpay-other div{
+        padding: 0 1rem;
+    }
+    .second-line{
+        flex-wrap: wrap;
+    }
+    .second-line div{
+        width: 26rem;
+    }
+    .third-line div{
+        width: 26rem;
+    }
+}

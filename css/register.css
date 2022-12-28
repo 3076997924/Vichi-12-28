@@ -1,0 +1,265 @@
+
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+
+
+body{
+    overflow: hidden;
+    background: url(../images/login/loginBg.jpg);
+    background-size: 100%,100%;
+}
+input[type=checkbox] {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */ 
+    -webkit-appearance:none;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.875rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    text-align: center;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    font-size: 1.5rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    content: " ";
+    color: #fff;
+    display: inline-block;
+    visibility: visible;
+    background:#FFFFFF;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox]:checked:after {
+    content: "\e60f";
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--mainColor);
+}
+
+.container{
+    margin-top: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72rem;
+    height:58rem;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-top: 0.5rem solid var(--mainColor);
+    padding-top: 2rem;
+}
+.register-title{
+    font-size: 2.5rem;
+}
+.register > p{
+    font-weight: bolder;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+}
+.register > p span{
+    color: var(--mainColor);
+    cursor: pointer;
+}
+.register-form{
+    width: 60%;
+}
+.register-phone,.register-phone-code,.register-password,.register-againPassword,.private{
+    position: relative;
+    width: 100%;
+    margin: 1rem 0;
+    height: 5rem;
+}
+.register-form input[type=text]{
+    height: 100%;
+    background: #f5f9fe;
+    padding-left: 6rem;
+    font-size: 1.5rem;
+}
+.register-form input[type=password]{
+    height: 100%;
+    background: #f5f9fe;
+    padding-left: 6rem;
+    font-size: 1.5rem;
+}
+.private input{
+    width: 100%;
+}
+.private img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.private i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.register-phone input{
+    width: 100%;
+}
+.register-phone-code input{
+    width: 65%;
+}
+.register-phone-code button{
+    width: 30%;
+    margin-left: 1rem;
+    height: 5rem;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.register-password input{
+    width: 100%;
+}
+.register-againPassword input{
+    width: 100%;
+}
+.register-phone img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.register-phone-code img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.register-password img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.register-password i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.register-againPassword img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.register-againPassword i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.register-phone i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.register-phone-code i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.register-agreement{
+    display: flex;
+}
+.register-agreement > p{
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+.register-agreement > p i{
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    color: #e93f36;
+}
+.register-agreement > p span{
+    color: var(--mainColor);
+    font-weight: bolder;
+}
+.sureReg{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--mainColor);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+    margin: 2rem 0;
+}
+.backhome{
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #666;
+    font-weight: bolder;
+}
+
+.copyright{
+    position: relative;
+    width: 25rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: var(--maindeepColor);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:660px){
+    .container{
+        width: 90%;
+        height: 62rem;
+    }
+    .register-form{
+        width: 80%;
+    }
+    .register-phone img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .register-phone-code img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .register-password img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .register-againPassword img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .private img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .copyright{
+        width: 28rem;
+    }
+}

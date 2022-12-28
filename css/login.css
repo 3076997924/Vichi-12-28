@@ -1,0 +1,163 @@
+:root{
+    --maindeepColor: #101d36;
+    --mainColor: #114b9c;
+}
+
+
+body{
+    background: url(../images/login/loginBg.jpg);
+    background-size: 100%,100%;
+}
+.container{
+    position: relative;
+    margin-top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72rem;
+    height: 50rem;
+}
+.login{
+    background: #fff;
+    width: 100%;
+    height: 44rem;
+}
+.back{
+    cursor: pointer;
+    height: 4rem;
+    line-height: 4rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.login-lf{
+    width: 40%;
+    height: 100%;
+    background: url(../images/login/loginBg2.jpg) no-repeat center center;
+    background-size: 100%,100%;
+}
+.login-rt{
+    width: 60%;
+    height: 100%;
+}
+.login-rt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.5rem solid var(--mainColor);
+    padding-top: 7rem;
+}
+.login-rt h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.login-rt p{
+    font-weight: bolder;
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+}
+.login-rt p span{
+    cursor: pointer;
+    color: var(--mainColor);
+}
+.login-rt form{
+    width: 70%;
+}
+.phone,.password{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    margin: 1.5rem 0;
+}
+.phone img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.password img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.phone i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.password i{
+    position: absolute;
+    top: 1.8rem;
+    left: 4.5rem;
+    width: .0625rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.phone input{
+    width: 100%;
+    height: 100%;
+    background: #f5f9fe;
+    padding-left: 6rem;
+    font-size: 1.5rem;
+}
+.password input{
+    width: 100%;
+    height: 100%;
+    background: #f5f9fe;
+    padding-left: 6rem;
+    font-size: 1.5rem;
+}
+.login-rt form span{
+    display: block;
+    text-align: right;
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.login-rt button{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--mainColor);
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+.copyright{
+    margin-top: 5rem;
+    width: 25rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: var(--maindeepColor);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width:660px){
+    .container{
+        width: 90%;
+    }
+    .login-lf{
+        background-size: cover;
+    }
+    .login-rt form{
+        width: 80%;
+    }
+    .phone img{
+        width: 2rem;
+        height: 2rem;
+        top: 1.5rem;
+    }
+    .password img{
+        width: 2rem;
+        height: 2rem;
+        top: 1.5rem;
+    }
+    .copyright{
+        width: 28rem;
+    }
+}

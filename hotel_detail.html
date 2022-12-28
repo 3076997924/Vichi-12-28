@@ -99,10 +99,9 @@
         .mySwiper .swiper-slide {
             width: 25%;
             height: 100%;
-            opacity: 0.4;
         }
 
-        .mySwiper .swiper-slide-thumb-active {
+        .mySwiper3 .swiper-slide-thumb-active {
             opacity: 1;
         }
 
@@ -113,8 +112,37 @@
             object-fit: cover;
         }
 
+        .mySwiper3 .swiper-slide {
+            opacity: 0.5;
+        }
+
+        .mySwiper3 .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+        
+        .mySwiper2 .swiper-slide {
+            opacity: 0.5;
+        }
+
+        .mySwiper2 .swiper-slide-thumb-active {
+            opacity: 1;
+        }
         a {
             color: #fff;
+        }
+
+        #swiperPc2 {
+            height: 15rem;
+            margin-top: 2rem;
+        }
+
+        #swiperPc2 .swiper-slide {
+            width: 24%;
+            margin-right: 2rem;
+        }
+
+        #swiperPc1Img {
+            height: 34rem;
         }
     </style>
 </head>
@@ -1350,58 +1378,16 @@
 
     <!-- Pc城市图片轮播图 -->
     <div class="cityImgsSwiper" style="display: none;">
-        <div class="city-swipers">
-            <img src="./images/hotel/city1.jpg" class="swiperimg current" style="display: block;">
-            <img src="./images/hotel/city2.jpg" class="swiperimg">
-            <img src="./images/hotel/city3.jpg" class="swiperimg">
-            <img src="./images/hotel/city4.jpg" class="swiperimg">
-            <img src="./images/hotel/city5.jpg" class="swiperimg">
-            <img src="./images/hotel/cityswiper1.jpg" class="swiperimg">
-            <img src="./images/hotel/cityswiper2.jpg" class="swiperimg">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" id="swiperPc1Img"
+            class="swiper mySwiper4">
+            <div class="swiper-wrapper" id="swiperPc1">
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="lf">
-            <span class="iconfont icon-left"></span>
-        </div>
-        <div class="lr">
-            <span class="iconfont icon-right"></span>
-        </div>
-        <div class="cityBt">
-            <div class="city-swiper-items">
-                <div class="city-swiper-item current">
-                    <img src="./images/hotel/city1.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/city2.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/city3.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/city4.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/city5.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/cityswiper1.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
-                <div class="city-swiper-item">
-                    <img src="./images/hotel/cityswiper2.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="item-line"></div>
-                </div>
+        <div thumbsSlider="" class="swiper mySwiper3">
+            <div class="swiper-wrapper" id="swiperPc2">
             </div>
         </div>
         <div class="citySwiperClose">
@@ -1411,43 +1397,13 @@
 
     <div class="mobileSwiper" style="display: none;">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./images/hotel1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel5.jpg" />
-                </div>
+            <div class="swiper-wrapper" id="swiperMobile1">
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
         <div thumbsSlider="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./images/hotel1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/hotel5.jpg" />
-                </div>
+            <div class="swiper-wrapper" id="swiperMobile2">
             </div>
         </div>
     </div>
@@ -1467,22 +1423,7 @@
         laydate.render({
             elem: '#intime'
         });
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-        });
+
     </script>
 </body>
 
